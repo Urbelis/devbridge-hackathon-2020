@@ -1,0 +1,15 @@
+{
+  "name": "dar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -t='snake'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "test-juggler": "^1.2.0"
+  }
+}
