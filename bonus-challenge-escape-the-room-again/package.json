@@ -1,0 +1,21 @@
+{
+  "name": "bonus-challenge-2-escape-the-room-again",
+  "version": "1.0.0",
+  "description": "Escape room automation script",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^26.4.2",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^5.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "../bonus-challenge-escape-the-room-again/node_modules/.bin/jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "preset": "jest-puppeteer",
+    "testTimeout": 15000
+  }
+}
