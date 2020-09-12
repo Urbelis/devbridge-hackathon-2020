@@ -1,5 +1,6 @@
 import requests 
 import json
+import time 
 from selenium import webdriver
 
 driver = webdriver.Chrome()
@@ -22,11 +23,19 @@ headers = {'authority': 'www.udemy.com',
 
 a = requests.get('https://www.udemy.com/api-2.0/search-courses/?price=price-free&q=free&sort=newest&skip_price=true', headers=headers)
 
+time.sleep(5)
+
 b = requests.get('https://www.udemy.com/api-2.0/search-courses/?p=2&price=price-free&q=free&sort=newest&skip_price=true', headers=headers)
+
+time.sleep(5)
 
 c = requests.get('https://www.udemy.com/api-2.0/search-courses/?p=3&price=price-free&q=free&sort=newest&skip_price=true', headers=headers)
 
+time.sleep(5)
+
 d = requests.get('https://www.udemy.com/api-2.0/search-courses/?p=4&price=price-free&q=free&sort=newest&skip_price=true', headers=headers)
+
+time.sleep(5)
 
 e = requests.get('https://www.udemy.com/api-2.0/search-courses/?p=5&price=price-free&q=free&sort=newest&skip_price=true', headers=headers)
 
