@@ -2,7 +2,6 @@ import requests
 import json
 from selenium import webdriver
 
-
 driver = webdriver.Chrome()
 driver.get('https://www.udemy.com')
 
@@ -55,6 +54,7 @@ for p in response_json1['courses']:
     title_array.append(str(p['title']))
     url_array.append(str(p['url']))
 
+
 for p in response_json2['courses']:
     title_array.append(str(p['title']))
     url_array.append(str(p['url']))
@@ -72,8 +72,10 @@ for p in response_json5['courses']:
     url_array.append(str(p['url']))
     
 
-c = [title_array, url_array]
 
-with open('listfile.txt', 'a') as file:
-    for x in zip(*c):
-        file.write("{0}\t{1}\n".format(*x))
+with open('listfile.txt', 'w') as filehandle:
+    filehandle.writelines("%s\n" % place for place in title_array)
+
+with open('listfile.txt', 'a') as filehandle:
+    filehandle.writelines("%s\n" % place for place in url_array)
+
