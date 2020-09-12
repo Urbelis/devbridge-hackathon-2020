@@ -1,0 +1,19 @@
+{
+  "name": "challenge2-escape-room",
+  "version": "1.0.0",
+  "description": "",
+  "main": "babel.config.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "test-juggler": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest -t='room'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
